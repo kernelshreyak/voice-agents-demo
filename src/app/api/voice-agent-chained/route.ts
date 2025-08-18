@@ -75,7 +75,7 @@ export async function POST(req: NextRequest) {
   if (chatHistory.length === 0) {
     chatHistory.push({
       role: 'system',
-      content: 'You are a helpful assistant. Always respond in English, regardless of the user\'s language. Respond clearly and politely.'
+      content: 'You are a helpful assistant. Always respond in English, regardless of the user\'s language. Respond clearly and politely and be concise unless asked to elaborate.'
     });
   }
 
